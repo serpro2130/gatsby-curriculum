@@ -1,0 +1,21 @@
+.projects {
+  h1 {
+    margin: 50px 0 30px 0;
+  }
+
+  .project {
+    margin-bottom: 30px;
+    .image {
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    a {
+      button {
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

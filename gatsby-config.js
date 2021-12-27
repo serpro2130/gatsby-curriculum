@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -28,7 +29,16 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.jpg`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images\/icons/,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
